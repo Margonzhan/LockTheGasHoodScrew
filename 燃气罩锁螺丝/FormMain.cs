@@ -320,7 +320,7 @@ namespace 燃气罩锁螺丝
                 HOperatorSet.Threshold(image, out HObject region1, 0, 100);
                 HOperatorSet.Connection(region1, out HObject connectionregion);
                 HOperatorSet.OpeningCircle(connectionregion, out HObject regionopening, 7.5);
-                HOperatorSet.SelectShape(regionopening, out HObject selectedregion, "area", "and", 12500, 79999);
+                HOperatorSet.SelectShape(regionopening, out HObject selectedregion, "area", "and", 9000, 79999);
                 
                 HOperatorSet.SelectShape(selectedregion, out selectedregion, "circularity", "and", 0.4, 1);
                 HOperatorSet.FillUp(selectedregion, out HObject regionfillup);
